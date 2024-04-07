@@ -1,0 +1,49 @@
+.main-traits {
+    padding: 94px 0;
+}
+
+.main-traits-list {
+    display: flex;
+    gap: 30px;
+}
+
+.main-traits-item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    &::before {
+            content: "";
+            width: 270px;
+            height: 120px;
+            background-color: #f5f4fa;
+            border-radius: 4px;
+            display: block;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 30px;
+        }
+        &:nth-child(1)::before {
+            background-image: url(../images/traits_icon1.svg);
+        }
+    
+        &:nth-child(2)::before {
+            background-image: url(../images/traits_icon2.svg);
+        }
+    
+        &:nth-child(3)::before {
+            background-image: url(../images/traits_icon3.svg);
+        }
+    
+        &:nth-child(4)::before {
+            background-image: url(../images/traits_icon4.svg);
+        }
+}
+.main-traits-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.main-traits-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $add-color;
+}

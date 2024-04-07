@@ -1,0 +1,26 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work-list {
+    display: flex;
+    gap: 30px;
+}
+
+.work-item {
+    position: relative;
+}
+
+.work-img-title {
+    position: absolute;
+    background-color: rgb(47, 48, 58, 0.8);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding: 27px 0;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
