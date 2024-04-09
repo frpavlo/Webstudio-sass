@@ -55,13 +55,13 @@
     display: flex;
     gap: 10px;
     color: $add-color;
-    &:hover .header-contacts-icon,
-        &:focus .header-contacts-icon {
-            fill: $accent-color;
-        }
 }
 
 .header-contacts-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: $add-color;
+        .header-contacts-link:hover &,
+            .header-contacts-link:focus & {
+                fill: $accent-color;
+            }
 }
