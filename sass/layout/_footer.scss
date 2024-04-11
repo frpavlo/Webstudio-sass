@@ -47,19 +47,8 @@
 .social-title {
     font-size: 14px;
     color: #fff;
+    margin-bottom: 20px;
 }
-
-.social-list {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.social-icon {
-    fill: #fff;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .mail-title {
     font-size: 14px;
     letter-spacing: 0.03em;

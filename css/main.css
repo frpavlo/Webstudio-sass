@@ -166,18 +166,17 @@ body {
   color: #212121;
 }
 
-.team-icon-list {
+.social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 16px;
   gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.team-icon-link {
+.social-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,36 +185,25 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-icon-link:hover, .team-icon-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: #2196f3;
 }
 
-.team-icon {
-  fill: #afb1b8;
+.social-list__link--back {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list__icon {
+  fill: #fff;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-icon-link:hover .team-icon, .team-icon-link:focus .team-icon {
+.social-list__link:hover .social-list__icon, .social-list__link:focus .social-list__icon {
   fill: #fff;
 }
 
-.social-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 12px;
-  border-radius: 50%;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover, .social-link:focus {
-  background-color: #2196f3;
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: #fff;
+.social-list__icon--grey {
+  fill: #afb1b8;
 }
 
 .header {
@@ -412,6 +400,7 @@ body {
 
 .team-speciality {
   margin-top: 10px;
+  margin-bottom: 16px;
   font-size: 16px;
   letter-spacing: 0.48px;
   text-align: center;
@@ -536,20 +525,7 @@ body {
 .social-title {
   font-size: 14px;
   color: #fff;
-}
-
-.social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.social-icon {
-  fill: #fff;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
 }
 
 .mail-title {
