@@ -8,7 +8,7 @@
     gap: 30px;
 }
 
-.team-item {
+.team__item {
     border-radius: 0px 0px 4px 4px;
     background-color: #fff;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
@@ -19,7 +19,7 @@
     padding: 30px 0;
 }
 
-.team-worker {
+.team__worker {
     color: $main-color;
     font-size: 16px;
     font-weight: 500;
@@ -27,7 +27,7 @@
     text-align: center;
 }
 
-.team-speciality {
+.team__speciality {
     margin-top: 10px;
     margin-bottom: 16px;
     font-size: 16px;

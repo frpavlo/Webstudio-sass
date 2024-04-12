@@ -35,7 +35,7 @@
     transform: translate(100%, -50%);
 }
 
-.modal-close-btn {
+.modal-order__close-btn {
     position: fixed;
     display: flex;
     padding: 10px;
@@ -49,14 +49,14 @@
             cursor: pointer;
         }
 }
-.modal-close-icon {
+.modal-order__close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         .modal-close-btn:hover &,
             .modal-close-btn:focus & {
                 fill: $accent-color;
             }
 }
-.modal-order-title {
+.modal-order__title {
     margin-bottom: 12px;
     font-size: 20px;
     letter-spacing: 0.03em;
@@ -64,7 +64,7 @@
     color: $main-color;
 }
 
-.modal-order-label {
+.modal-order__label {
     display: block;
     position: relative;
     font-weight: 400;
@@ -75,7 +75,7 @@
             margin-top: 10px;
         }
 }
-.modal-order-input {
+.modal-order__input {
     outline: none;
     margin-top: 4px;
     width: 100%;
@@ -89,14 +89,14 @@
         }
 }
 
-.modal-order-icon {
+.modal-order__icon {
     position: absolute;
     left: 12px;
     bottom: 14px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-order-comment {
+.modal-order__comment {
     outline: none;
     margin-top: 4px;
     padding: 12px 16px;
@@ -117,7 +117,7 @@
         border-color: $accent-color;
     }
 }
-.order-terms {
+.modal-order__terms {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -129,7 +129,7 @@
     color: $add-color;
 }
 
-.order-terms-input {
+.modal-order__terms-input {
     width: 16px;
     height: 15px;
     outline: none;
@@ -137,16 +137,16 @@
     left: 24px;
 }
 
-.order-terms-input:focus+.custom-order-terms-input {
+.modal-order__terms-input:focus+.modal-order__custom-terms-input {
     border-color: $accent-color;
 }
 
-.order-terms-input:checked+.custom-order-terms-input {
+.modal-order__terms-input:checked+.modal-order__custom-terms-input {
     background-color: $accent-color;
     background-image: url(../images/input-checked.svg);
 }
 
-.custom-order-terms-input {
+.modal-order__custom-terms-input {
     width: 16px;
     height: 15px;
     border: 2px solid $main-color;
@@ -157,16 +157,16 @@
             cursor: pointer;
         }
 }
-.terms-link {
+.modal-order__terms-link {
     text-decoration: underline;
     color: $accent-color;
 }
-.modal-order-input:hover+.modal-order-icon,
-.modal-order-input:focus+.modal-order-icon {
+.modal-order__input:hover+.modal-order__icon,
+.modal-order__input:focus+.modal-order__icon {
     fill: $accent-color;
 }
 
-.modal-order-comment:hover::placeholder,
-.modal-order-comment:focus::placeholder {
+.modal-order__comment:hover::placeholder,
+.modal-order__comment:focus::placeholder {
     color: $accent-color;
 }

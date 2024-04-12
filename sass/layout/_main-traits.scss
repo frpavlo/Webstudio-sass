@@ -7,7 +7,7 @@
     gap: 30px;
 }
 
-.main-traits-item {
+.main-traits__item {
     flex-basis: calc((100% - 3 * 30px) / 4);
     &::before {
             content: "";
@@ -36,13 +36,13 @@
             background-image: url(../images/traits_icon4.svg);
         }
 }
-.main-traits-title {
+.main-traits__title {
     margin-bottom: 10px;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.main-traits-text {
+.main-traits__text {
     font-size: 14px;
     line-height: 1.71;
     color: $add-color;
