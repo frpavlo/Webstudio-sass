@@ -23,14 +23,14 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container header-container">
+			<div class="container header__container">
 				<a href="./index.html" class="logo link animate__animated animate__rubberBand">
-					<span class="accent-logo">Web</span>Studio
+					<span class="logo__accent">Web</span>Studio
 				</a>
 				<nav class="nav">
-					<ul class="nav-list list">
+					<ul class="nav__list list">
 						<li class="nav__item">
-							<a href="./index.html" class="nav__link link current">Студія</a>
+							<a href="./index.html" class="nav__link link nav__link--current">Студія</a>
 						</li>
 						<li class="nav__item">
 							<a href="./portfolio.html" class="nav__link link">Портфоліо</a>
@@ -41,17 +41,17 @@
 					</ul>
 				</nav>
 				<ul class="contacts-list list">
-					<li class="contacts__item">
+					<li class="contacts-list__item">
 						<a href="mailto:info@devstudio.com" class="contacts-link contacts-link--flex link">
-							<svg width="16" height="12" class="contacts__icon">
+							<svg width="16" height="12" class="contacts-link__icon">
 								<use xlink:href="./images/symbol-defs.svg#icon-envelope"></use>
 							</svg>
 							info@devstudio.com
 						</a>
 					</li>
-					<li class="contacts__item">
+					<li class="contacts-list__item">
 						<a href="tel:+380961111111" class="contacts-link contacts-link--flex link">
-							<svg width="10" height="16" class="contacts__icon">
+							<svg width="10" height="16" class="contacts-link__icon">
 								<use xlink:href="./images/symbol-defs.svg#icon-smartphone"></use>
 							</svg>
 							+38 096 111 11 11
@@ -74,7 +74,7 @@
 			<section class="main-traits">
 				<div class="container">
 					<h2 class="visually-hidden">Наші переваги</h2>
-					<ul class="main-traits-list list">
+					<ul class="main-traits__list list">
 						<li class="main-traits__item">
 							<h3 class="main-traits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
 							<p class="main-traits__text">
@@ -99,7 +99,7 @@
 			<section class="work">
 				<div class="container">
 					<h2 class="work__title">Чим ми займаємося</h2>
-					<ul class="work-list list">
+					<ul class="work__list list">
 						<li class="work__item" data-aos="flip-up">
 							<img src="./images/work_img1.jpg" alt="someone coding" class="work__img" />
 							<h3 class="work__img-title">ДЕСКТОПНІ ДОДАТКИ</h3>
@@ -118,10 +118,10 @@
 			<section class="team">
 				<div class="container">
 					<h2 class="team__title">Наша команда</h2>
-					<ul class="team-list list">
+					<ul class="team__list list">
 						<li class="team__item" data-aos="fade-up">
-							<img src="./images/worker_photo1.jpg" alt="Ігор Дем'яненко" width="300" class="team-img" />
-							<div class="team-box">
+							<img src="./images/worker_photo1.jpg" alt="Ігор Дем'яненко" width="300" class="team__img" />
+							<div class="team__box">
 								<h3 class="team__worker">Ігор Дем'яненко</h3>
 								<p class="team__speciality">Product Designer</p>
 								<ul class="social-list list">
@@ -157,8 +157,8 @@
 							</div>
 						</li>
 						<li class="team__item" data-aos="fade-up">
-							<img src="./images/worker_photo2.jpg" alt="Ольга Рєпіна" width="300" class="team-img" />
-							<div class="team-box">
+							<img src="./images/worker_photo2.jpg" alt="Ольга Рєпіна" width="300" class="team__img" />
+							<div class="team__box">
 								<h3 class="team__worker">Ольга Рєпіна</h3>
 								<p class="team__speciality">Frontend Developer</p>
 								<ul class="social-list list">
@@ -194,8 +194,8 @@
 							</div>
 						</li>
 						<li class="team__item" data-aos="fade-up">
-							<img src="./images/worker_photo3.jpg" alt="Микола Тарасов" width="300" class="team-img" />
-							<div class="team-box">
+							<img src="./images/worker_photo3.jpg" alt="Микола Тарасов" width="300" class="team__img" />
+							<div class="team__box">
 								<h3 class="team__worker">Микола Тарасов</h3>
 								<p class="team__speciality">Marketing</p>
 								<ul class="social-list list">
@@ -231,8 +231,8 @@
 							</div>
 						</li>
 						<li class="team__item" data-aos="fade-up">
-							<img src="./images/worker_photo4.jpg" alt="Михайло Єрмаков" width="300" class="team-img" />
-							<div class="team-box">
+							<img src="./images/worker_photo4.jpg" alt="Михайло Єрмаков" width="300" class="team__img" />
+							<div class="team__box">
 								<h3 class="team__worker">Михайло Єрмаков</h3>
 								<p class="team__speciality">UI Designer</p>
 								<ul class="social-list list">
@@ -272,7 +272,7 @@
 			</section>
 			<section class="clients">
 				<h2 class="clients__title">Постійні клієнти</h2>
-				<ul class="clients-list list">
+				<ul class="clients__list list">
 					<li class="clients__item" data-aos="zoom-in">
 						<a class="clients__link" href="">
 							<svg width="106" height="60" class="clients__icon">
@@ -322,10 +322,10 @@
 			<div class="container">
 				<div class="address-box">
 					<a href="./index.html" class="logo footer__logo logo--white link">
-						<span class="accent-logo">Web</span>Studio
+						<span class="logo__accent">Web</span>Studio
 					</a>
 					<address class="address">
-						<ul class="address-list list">
+						<ul class="address__list list">
 							<li class="address__item">
 								<a href="https://maps.app.goo.gl/9svt2B641Biuaw8g6" target="_blank" class="address__map-link link">
 									м. Київ, пр-т Лесі Українки, 26
@@ -341,7 +341,7 @@
 					</address>
 				</div>
 				<div class="social-box">
-					<h3 class="social__title">ПРИЄДНУЙТЕСЬ</h3>
+					<h3 class="social-box__title">ПРИЄДНУЙТЕСЬ</h3>
 					<ul class="social-list list">
 						<li class="social-list__item">
 							<a class="social-list__link social-list__link--back" href="https://www.instagram.com/">
@@ -377,7 +377,7 @@
 					<h3 class="mail-box__title">ПІДПІШІТЬСЯ НА РОЗСИЛКУ</h3>
 					<form action="" class="mail-box__form">
 						<input type="email" name="email" class="mail-box__input" placeholder="E-mail" />
-						<button type="submit" class="mail-box__btn button button--flex">Підписатися</button>
+						<button type="submit" class="mail-box__button button button--flex">Підписатися</button>
 					</form>
 				</div>
 			</div>
@@ -385,7 +385,7 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal-order">
 				<button class="modal-order__close-btn" data-modal-close>
-					<svg width="11" height="11" class="modal-close-icon">
+					<svg width="11" height="11" class="modal-order__close-icon">
 						<use xlink:href="./images/symbol-defs.svg#icon-cross"></use>
 					</svg>
 				</button>
@@ -422,7 +422,7 @@
 						Погоджуюся з розсилкою та приймаю
 						<a href="" class="modal-order__terms-link">Умови договору</a>
 					</label>
-					<button class="modal-order__btn button button--shadow" type="submit">Відправити</button>
+					<button class="modal-order__button button button--shadow" type="submit">Відправити</button>
 				</form>
 			</div>
 		</div>
