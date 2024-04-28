@@ -4,14 +4,22 @@
 
 .main-traits__list {
 	display: flex;
+	justify-content: space-between;
 	gap: 30px;
+	flex-wrap: wrap
 }
 
 .main-traits__item {
-	@include flex-basis(30px, 4);
+	@include flex-basis(0px, 1);
+	@media screen and (min-width:768px) {
+		@include flex-basis(30px, 2)
+	}
+	@media screen and (min-width:1440px) {
+		@include flex-basis(30px, 4);
+	}
 	&::before {
 		content: "";
-		width: 270px;
+		width: 100%;
 		height: 120px;
 		background-color: #f5f4fa;
 		border-radius: 4px;
@@ -27,13 +35,19 @@
 	}
 }
 .main-traits__title {
+	text-align: center;
 	margin-bottom: 10px;
 	font-size: 14px;
 	text-transform: uppercase;
+	letter-spacing: 3%;
+	@media screen and (min-width:768px) {
+		text-align: start;
+	}
 }
 
 .main-traits__text {
 	font-size: 14px;
 	line-height: 1.71;
 	color: $add-color;
+	letter-spacing: 3%;
 }

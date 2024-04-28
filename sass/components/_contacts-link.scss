@@ -1,34 +1,42 @@
 .contacts-link {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    @include transition(color);
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.28px;
+	@include transition(color);
 
-    &:hover {
-        color: $accent-color;
-    }
+	&:hover {
+		color: $accent-color;
+	}
 }
 
 .contacts-link--flex {
-    display: flex;
-    gap: 10px;
-    color: $add-color;
-    align-items: center;
+	&:first-child {
+        @media screen and (min-width: 768px) {
+                margin-bottom: 10px;
+            }
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 0;
+		}
+	}
+	display: flex;
+	gap: 10px;
+	color: $add-color;
+	align-items: center;
 }
 
 .contacts-link__icon {
-    @include transition(fill);
-    fill: $add-color;
+	@include transition(fill);
+	fill: $add-color;
 
-    .contacts-link:hover &,
-    .contacts-link:focus & {
-        fill: $accent-color;
-    }
+	.contacts-link:hover &,
+	.contacts-link:focus & {
+		fill: $accent-color;
+	}
 }
 .contacts-link--font {
-    color: rgba(255, 255, 255, 0.6);
-    font-family: inherit;
-    font-size: 14px;
-    line-height: 1.71;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 1.71;
 }
