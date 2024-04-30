@@ -92,7 +92,7 @@ body {
   margin: 0 auto;
   padding: 10px 24px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .hero-studio__button {
     padding: 10px 32px;
   }
@@ -167,7 +167,7 @@ body {
   font-size: 28px;
   letter-spacing: 1.08px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .work__title,
   .team__title,
   .clients__title {
@@ -246,12 +246,12 @@ body {
           align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .contacts-link--flex:first-child {
+  .contacts-list__item .contacts-link--flex:first-child {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .contacts-link--flex:first-child {
+  .contacts-list__item .contacts-link--flex:first-child {
     margin-bottom: 0;
   }
 }
@@ -270,21 +270,6 @@ body {
   font-family: inherit;
   font-size: 14px;
   line-height: 1.71;
-}
-
-.header {
-  padding: 16px 0;
-}
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 21px 0;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
 }
 
 .header__container {
@@ -325,6 +310,7 @@ body {
 }
 
 .nav__link {
+  display: block;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -360,12 +346,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .nav__link--current::after {
-    bottom: 4px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .nav__link--current::after {
-    bottom: 4px;
+    bottom: 0px;
   }
 }
 .nav__link--current:hover::after {
@@ -383,6 +364,13 @@ body {
 @media screen and (min-width: 768px) {
   .contacts-list {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -404,7 +392,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .hero-studio {
     padding: 200px 0;
   }
@@ -420,7 +408,7 @@ body {
   letter-spacing: 2.64px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .hero-studio__title {
     font-size: 44px;
     line-height: 1.36;
@@ -428,7 +416,12 @@ body {
 }
 
 .main-traits {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .main-traits {
+    padding: 94px 0;
+  }
 }
 
 .main-traits__list {
@@ -453,7 +446,7 @@ body {
         flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .main-traits__item {
     -ms-flex-preferred-size: calc((100% - 30px * (4 - 1)) / 4);
         flex-basis: calc((100% - 30px * (4 - 1)) / 4);
@@ -504,8 +497,13 @@ body {
 }
 
 .team {
-  padding: 94px 0;
+  padding: 60px 0;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team__list {
@@ -518,8 +516,8 @@ body {
 }
 
 .team__item {
-  -ms-flex-preferred-size: calc((100% - 0 * (1 - 1)) / 1);
-      flex-basis: calc((100% - 0 * (1 - 1)) / 1);
+  -ms-flex-preferred-size: calc((100% - 0px * (1 - 1)) / 1);
+      flex-basis: calc((100% - 0px * (1 - 1)) / 1);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -531,7 +529,7 @@ body {
         flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 30px * (4 - 1)) / 4);
         flex-basis: calc((100% - 30px * (4 - 1)) / 4);
@@ -567,7 +565,7 @@ body {
   display: none;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .work {
     display: block;
   }
@@ -599,7 +597,12 @@ body {
 }
 
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 
 .clients__list {
@@ -634,7 +637,7 @@ body {
     padding: 16px 60px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .clients__link {
     -ms-flex-preferred-size: calc((100% - 30px * (6 - 1)) / 6);
         flex-basis: calc((100% - 30px * (6 - 1)) / 6);

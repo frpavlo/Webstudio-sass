@@ -1,5 +1,8 @@
 .main-traits {
-	padding: 94px 0;
+	padding: 60px 0;
+	@media screen and (min-width:1200px) {
+		padding: 94px 0;
+	}
 }
 
 .main-traits__list {
@@ -14,7 +17,7 @@
 	@media screen and (min-width:768px) {
 		@include flex-basis(30px, 2)
 	}
-	@media screen and (min-width:1440px) {
+	@media screen and (min-width:1200px) {
 		@include flex-basis(30px, 4);
 	}
 	&::before {

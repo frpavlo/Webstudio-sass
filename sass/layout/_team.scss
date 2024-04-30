@@ -1,5 +1,9 @@
 .team {
-    padding: 94px 0;
+        padding: 60px 0;
+        
+            @media screen and (min-width:1200px) {
+                padding: 94px 0;
+            }
     background-color: #f5f4fa;
 }
 
@@ -10,11 +14,11 @@
 }
 
 .team__item {
-    @include flex-basis(0, 1);
+    @include flex-basis(0px, 1);
     @media screen and (min-width:768px) {
         @include flex-basis(30px, 2);
     }
-    @media screen and (min-width:1440px) {
+    @media screen and (min-width:1200px) {
         @include flex-basis(30px, 4);
     }
     border-radius: 0px 0px 4px 4px;

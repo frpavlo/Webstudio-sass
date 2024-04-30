@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    @media screen and (min-width:1440px) {
+    @media screen and (min-width:1200px) {
         padding: 200px 0;
     }
 }
@@ -18,7 +18,7 @@
     line-height: 1.62;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    @media screen and (min-width:1440px) {
+    @media screen and (min-width:1200px) {
         font-size: 44px;
         line-height: 1.36;
     }
