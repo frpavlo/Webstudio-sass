@@ -15,8 +15,22 @@
 }
 
 .footer .container {
+    text-align: center;
     display: flex;
-    gap: 80px;
+    flex-direction: column;
+    gap: 60px;
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 165px;
+        align-items: flex-start;
+    }
+    @media screen and (min-width:1200px) {
+        column-gap: 80px;
+        gap: 80px;
+        text-align: start;
+    }
+
 }
 
 .address {
@@ -47,7 +61,16 @@
 
 .mail-box__form {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    @media screen and (min-width:768px) {
+       
+    }
+    @media screen and (min-width:1200px) {
+        gap: 12px;
+        flex-direction: row;
+    }
 }
 
 .mail-box__input {
@@ -55,7 +78,13 @@
     border-radius: 4px;
     background-color: transparent;
     padding: 15px 0 15px 15px;
-    width: 360px;
+    width: 100%;
+    @media screen and (min-width:768px) {
+        width: 450px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 360px;
+    }
     outline: none;
     color: #fff;
     @include transition(border-color);
