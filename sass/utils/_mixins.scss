@@ -4,3 +4,22 @@
 @mixin transition($property) {
     transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@mixin retina($device-ratio, $dpi, $dppx) {
+
+    @media (min-device-pixel-ratio: $device-ratio),
+    (min-resolution: $dpi),
+    (min-resolution: $dppx) {
+        @content;
+    }
+}
+@mixin tab($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin desc($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}

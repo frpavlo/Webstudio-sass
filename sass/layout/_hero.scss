@@ -1,25 +1,44 @@
 .hero-studio {
-    padding: 118px 0;
-    background-image: linear-gradient(to left, #2f303a66, #2f303a66), url(../images/bg_img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    @media screen and (min-width:1200px) {
-        padding: 200px 0;
-    }
+	padding: 118px 0;
+	background-image: linear-gradient(to left, #2f303a66, #2f303a66), url(../images/bg_img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	@media screen and (min-width: 1200px) {
+		padding: 200px 0;
+	}
+	@include retina(2, 192dpi, 2dppx) {
+		background-image: url("../../images/mob-2x.webp");
+	}
+
+	@include tab(767px) {
+		background-image: url("../../images/tab-1x.webp");
+
+		@include retina(2, 192dpi, 2dppx) {
+			background-image: url("../../images/tab-2x.webp");
+		}
+	}
+
+	@include desc(1199px) {
+		background-image: url("../../images/desk-1x.webp");
+
+		@include retina(2, 192dpi, 2dppx) {
+			background-image: url("../../images/desk-2x.webp");
+		}
+	}
 }
 
 .hero-studio__title {
-    margin-bottom: 30px;
-    font-weight: 900;
-    color: #fff;
-    text-align: center;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    @media screen and (min-width:1200px) {
-        font-size: 44px;
-        line-height: 1.36;
-    }
+	margin-bottom: 30px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	font-size: 26px;
+	line-height: 1.62;
+	letter-spacing: 2.64px;
+	text-transform: uppercase;
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: 1.36;
+	}
 }
